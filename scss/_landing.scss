@@ -1,0 +1,109 @@
+/**
+ * Landing page styling
+ *
+ */
+
+.page-template-page-landing {
+  header {
+    display: none;
+  }
+
+  #landing {
+    .top {
+      height: 50vh;
+      color: white;
+      background: url('../images/landing-bg.jpg') center center no-repeat;
+      background-size: cover;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .inner {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        box-sizing: border-box;
+
+        .logo {
+          text-align: center;
+
+          img {
+            width: 80%;
+            max-width: 300px;
+          }
+        }
+
+        .coming-soon {
+          text-align: center;
+          margin: 30px 0 0 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .bottom {
+      height: 50vh;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+
+      .form {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 400px;
+
+        input {
+          border: 1px solid black;
+          border-radius: 0;
+          font-size: 13px;
+          width: 100%;
+          box-shadow: none;
+          padding: 5px 15px;
+          font-family: 'gotham';
+        }
+
+        .title {
+          text-align: center;
+          font-family: 'gotham-light';
+          font-size: 17px;
+        }
+
+        .responses {
+          div {
+            display: none;
+            text-align: center;
+          }
+
+          #error-response {
+            color: red;
+          }
+
+          #success-response {
+            color: green;
+          }
+        }
+
+        .submit {
+          text-align: center;
+
+          button {
+            color: white;
+            background: black;
+            border: none;
+            padding: 5px 25px;
+            font-family: 'gotham';
+            margin: 0;
+            text-shadow: none;
+            box-shadow: none;
+            border-radius: 0;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

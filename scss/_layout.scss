@@ -1,0 +1,252 @@
+/**
+ * Layout styling
+ */
+
+
+/*----------  BLOG STYLE Start  ----------*/
+article.post {
+  .entry-wrap {
+    margin-top: 50px;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+/*----------  BLOG STYLE End  ----------*/
+
+.x-section {
+  .x-container {
+    /*----------  MAKE SURE IMAGE ALWAYS FULL WIDTH Start  ----------*/
+    img.fullwidth-img {
+      width: 100%;
+    }
+    /*----------  MAKE SURE IMAGE ALWAYS FULL WIDTH End  ----------*/
+  }
+
+  .x-container.max.width {
+    width: 100%;
+  }
+}
+
+.x-navbar-fixed-top {
+  @media screen and (max-width: 979px) {
+    position: fixed;
+  }
+}
+
+
+.page-id-2 {
+  #x-section-1 {
+    background-size: cover;
+    position: relative;
+    height: 660px;
+    background-position: center top;
+
+    .x-container {
+      &.button-container {
+        position: absolute;
+        bottom: 17%;
+      }
+    }
+  }
+
+  /*----------  EDIT STYLES OF NEWSLETTER SIGNUP IN HOMEPAGE Start  ----------*/
+    .x-raw-content {
+      .form#newsletter-section-7 {
+        .responses {
+          div {
+            display: none;
+            text-align: center;
+          }
+
+          #error-response {
+            color: red;
+          }
+
+          #success-response {
+            color: green;
+          }
+        }
+
+        .field {
+          input {
+            max-width: 300px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            font-size: 13px;
+            box-shadow: none;
+            padding: 5px 10px;
+            font-family: 'gotham';
+          }
+        }
+
+        .submit {
+          button {
+            color: white;
+            border: none;
+            padding: 5px 25px;
+            font-family: 'gotham';
+            text-shadow: none;
+            box-shadow: none;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  /*----------  EDIT STYLES OF NEWSLETTER SIGNUP IN HOMEPAGE End  ----------*/
+}
+
+
+/*----------  EDIT TAB BAR STYLE Start  ----------*/
+.x-nav-tabs {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+  font-weight: 500;
+
+  .x-nav-tabs-item {  
+    border: none;
+    margin-right: 10px;
+    
+    @media screen and (min-width: 920px) {
+      width: initial !important;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 920px) {
+      width: 33.33% !important;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      width: initial !important;
+    }
+     
+    @media screen and (max-width: $mobile) {
+      width: 33.33% !important;
+    }
+
+    a {
+      background-color: white;
+      float: left;
+      padding-left: 0;
+    }
+
+    a:hover {
+      background-color: white;
+    }
+  }
+
+  .x-nav-tabs-item.active {
+      a {
+        box-shadow: none !important;
+      }
+    }
+}
+
+.x-tab-content {
+  box-shadow: none; 
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+/*----------  EDIT TAB BAR STYLE End  ----------*/
+
+/*----------  EDIT STYLES OF BLOG PAGE Start  ----------*/
+.page-id-64 {
+  .entry-wrap {
+    box-shadow: none;
+    padding: 0;
+
+    .entry-header {
+      .entry-title {
+        display: none;
+      }
+    }
+  }
+  .x-container.max.width.offset {
+    margin-top: 20px;
+  }
+
+  .tg-grid-wrapper {
+    .tg-filters-holder {
+      .tg-filter {
+        margin: 10px;
+      }
+    }
+
+    .tg-grid-holder {
+      .tg-item {
+        /*----------  REMOVE AUTHOR OF A BLOG  Start  ----------*/
+        .tg-item-content-holder {
+          .tg-item-author {
+            display: none;
+          }
+        }
+        /*----------  REMOVE AUTHOR OF A BLOG End  ----------*/
+      }
+    }
+  }
+}
+/*----------  EDIT STYLES OF BLOG PAGE End  ----------*/
+
+/*----------  EDIT STYLES OF ALERTS FROM CONTACT FORM Start  ----------*/
+.page-id-67 {
+  .x-main {
+    #x-section-5 {
+      .x-container {
+        #wpcf7-f87-p67-o1 {
+          p {
+            span {
+              span[role=alert] {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----------  EDIT STYLES OF ALERTS FROM CONTACT FORM End  ----------*/
+
+
+.page-id-130 {
+  /*----------  EDIT STYLES OF CART BUTTON OF SHOP PAGE Start  ----------*/
+  .x-raw-content {
+    @media screen and (max-width: $mobile) {
+      text-align: center;
+    }
+
+
+    .price-product {
+      padding-right: 10px; 
+      font-size: 55px; 
+      vertical-align: text-bottom;
+      color: $primary-color;
+      //font-family: "Lato";
+      //font-weight: 100;
+    }
+
+    .cart-button {
+      .cart-icon {
+        width: 110px;
+        height: 60px;
+        margin-bottom: 16px;
+        background: url('../images/cart-icon-new.png') no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+
+        &:hover {
+          opacity: 0.8
+        }
+      }
+    }
+  }
+
+  .h-custom-headline {
+    margin-top: 15px;
+  }
+  /*----------  EDIT STYLES OF CART BUTTON OF SHOP PAGE End  ----------*/
+}
+

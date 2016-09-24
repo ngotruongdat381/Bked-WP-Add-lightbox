@@ -1,0 +1,199 @@
+#lightbox_close {
+  display: none;
+  position: fixed;
+  top: calc(50% - 220px);
+  left: calc(50% + 252px);
+  background-color: $primary-color;
+  height: 40px;
+  width: 40px;
+  z-index: 2000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 39px;
+  color: white;
+  cursor: pointer;
+
+  @media screen and (max-width: 480px) and (orientation: portrait), screen and (max-width: 750px) and (min-device-width: 751px) {
+    right: 5px;
+    left: auto;
+    top: calc(50% - 166px);
+  }
+
+  @media screen and (max-width: 750px) and (max-device-width: 750px) and (orientation: landscape) {
+    right: 5px;
+    left: auto;
+    top: calc(50% - 104px);
+  }
+}
+
+.black_overlay{
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.4;
+  opacity:.4;
+  filter: alpha(opacity=40);
+}
+
+.white_content {
+  position: fixed;
+  z-index: 1002;
+  top: calc(50% - 200px);
+  left: calc(50% - 240px);
+  display: none;
+  overflow: auto;
+  width: 480px;
+  height: 400px;
+  padding: 16px;
+  background-color: white;
+
+  @media screen and (max-width: 480px) and (orientation: portrait), screen and (max-width: 750px) and (min-device-width: 751px) {
+    top: calc(50% - 145px);
+    box-sizing: border-box;
+    left: 2%;
+    width: 96%;
+    height: 360px;
+  }
+
+  @media screen and (max-width: 750px) and (max-device-width: 750px) and (orientation: landscape) {
+    box-sizing: border-box;
+    left: 2%;
+    width: 96%;
+    height: 240px;
+    top: calc(50% - 80px);
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'book';
+  }
+
+  .sub-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+    font-family: 'book';
+  }
+
+  .sign-up {
+    color: black;
+    font-size: 30px;
+    font-family: 'book';
+    text-align: center;
+    margin: 0 0 10px 0;
+    line-height: 30px;
+  }
+
+  .get10 {
+    color: $primary-color;
+    font-family: 'book-bolder';
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .voucher {
+    font-family: 'handwrite';
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    line-height: 25px;
+    margin: 0;
+  }
+  
+  .hline {
+    width: 50px;
+    margin: 20px auto;
+    height: 0;
+    border-top: 2px solid $primary-color;
+  }
+
+  .para {
+    text-align: center;
+    font-family: 'book';
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  .response {
+    margin: 5px 0;
+    text-align: center;
+    font-family: 'book';
+    color: transparent;
+
+    &.success {
+      color: green;
+    }
+
+    &.error {
+      color: red;
+    }
+  }
+
+  .form {
+    width: 100%;
+    
+    label{
+      width: 100% !important;
+      float: left;
+      margin-bottom: 5px !important;
+      font-family: 'book';
+    }
+
+    input {
+      font-family: 'book';
+      line-height: 15px;
+      float: left;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #a5a5a5;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .submit-button {
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      float: left;
+
+      #newsletter-submit {
+        width: 130px;
+        height: 41px;
+        cursor: pointer;
+        text-transform: none;
+        color: white;
+        border: none;
+        outline: none;
+        background: $primary-color;
+        font-family: 'book-bold';
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}

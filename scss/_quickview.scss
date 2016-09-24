@@ -1,0 +1,254 @@
+/**
+ * For all screen
+ */
+
+#quickViewOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000 !important;
+  opacity: 0.7 !important;
+  display: none;
+  z-index: 2000;
+}
+
+#quickViewResponseData {
+  position: fixed;
+  top: calc(50% - 250px);
+  left: calc(50% - 350px);
+  background: #F9F9F9;
+  width: 700px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  display: none;
+  overflow: auto;
+  background-color: white;
+
+  input,
+  select,
+  button {
+    outline: none !important;
+  }
+
+  .close-quickview {
+    position: fixed;
+    top: calc(50% - 250px);
+    right: calc(50% - 350px);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 40px;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100000;
+  }
+
+  #qty_ {
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    max-width: 180px;
+    background-image: url("../images/select-down-icon.jpeg");
+    padding-right: 35px !important;
+    padding: 10px;
+    border-radius: 0;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    color: #303030;
+  }
+
+  .ProductDetailsGrid {
+    .DetailRow {
+      &.addToCart {
+        margin-top: 10px;
+
+        input {
+          color: white;
+          border: none;
+          padding: 12px 8px;
+          box-sizing: border-box;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.disabled {
+            background-color: #888;
+          }
+        }
+
+        span {
+          display: none;
+        }
+
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #QuickViewContent {
+    .qprod {
+      #QuickViewShareLinksContainer {
+        display: none;
+      }
+    }
+  }
+}
+
+/**
+ * For mobile only
+ */
+
+@media screen and (max-width: 480px) and (orientation: portrait), screen and (max-width: 750px) and (min-device-width: 751px) {
+  #quickViewResponseData {
+    width: 300px;
+    height: 400px;
+    top: calc(50% - 200px);
+    left: calc(50% - 150px);
+    overflow: hidden;
+    align-items: initial;
+
+    .ModalContent {
+      overflow: hidden;
+    }
+
+    .loading-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .close-quickview {
+      top: calc(50% - 200px);
+      right: calc(50% - 150px);
+    }
+
+    #QuickViewImage {
+      text-align: center;
+
+      img {
+        max-height: 200px !important;
+      }
+    }
+
+    .ProductDetailsGrid {
+      > h1 {
+        font-size: 15px;
+      }
+
+      .DetailRow {
+        margin-bottom: 5px;
+      }
+    }
+
+    #quickViewResponseData {
+      .BrandName {
+        display: none;
+      }
+    }
+
+    .s-price {
+      display: none;
+    }
+  }
+}
+
+// mobile landscape
+@media screen and (max-width: 750px) and (max-device-width: 750px) and (orientation: landscape) {
+  #quickViewResponseData {
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 300px;
+    overflow: auto;
+    
+    .close-quickview {
+      top: calc(50% - 150px);
+      right: calc(50% - 200px);
+    }
+    
+    .ModalContent {
+      overflow: auto;
+    }
+
+    .loading-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #QuickViewImage {
+      text-align: center;
+
+      img {
+        max-height: 200px !important;
+        margin-top: 100px;
+      }
+    }
+
+    .ProductDetailsGrid {
+      > h1 {
+        font-size: 15px;
+      }
+
+      .DetailRow {
+        margin-bottom: 5px;
+      }
+    }
+
+    #quickViewResponseData {
+      .BrandName {
+        display: none;
+      }
+    }
+
+    .s-price {
+      display: none;
+    }
+  }
+}
+
+/**
+ * For tablet and desktop
+ */
+
+@media screen and (min-width: 751px) and (min-device-width: 751px) {
+  #quickViewResponseData {
+    .clear {
+      display: none;
+    }
+
+    #QuickViewImage {
+      float: left;
+
+      img {
+        max-width: 240px;
+        max-height: 400px;
+        float: left;
+        margin: 0 20px 0 40px;
+      }
+    }
+
+    .ProductDetailsGrid {
+      padding-left: 300px;
+      box-sizing: border-box;
+
+      > h1 {
+        font-size: 25px;
+      }
+    }
+
+    #QuickViewContent {
+      .qprod {
+        float: left;
+      }
+    }
+  }
+}

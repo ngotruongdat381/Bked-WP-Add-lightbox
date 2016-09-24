@@ -1,0 +1,110 @@
+/**
+ * Header styling
+ */
+
+header {
+  .x-social-global {
+    a {
+      i {
+        width: 18px;
+        height: 15px;
+        margin: 5px 4px;
+
+        &:before {
+          content: initial;
+        }
+
+        &.x-icon-search {
+          background: url('../images/search-topbar-icon-grey.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+
+          &:hover {
+            background: url('../images/search-topbar-icon-brown.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+          }
+        }
+
+        &.x-icon-facebook-square {
+          background: url('../images/facebook-topbar-icon-grey.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+
+          &:hover {
+            background: url('../images/facebook-topbar-icon-brown.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+          }
+        }
+
+        &.x-icon-instagram {
+          background: url('../images/instagram-topbar-icon-grey.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+
+          &:hover {
+            background: url('../images/instagram-topbar-icon-brown.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+          }
+        }
+        
+/*      &.x-icon-linkedin-square {
+          background: url('../images/linkedin-topbar-icon-brown.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+        } */
+
+        &.x-icon-youtube-square {
+          background: url('../images/youtube-topbar-icon-grey.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+
+          &:hover {
+            background: url('../images/youtube-topbar-icon-brown.png') no-repeat;
+            background-position: center center;
+            background-size: contain;
+          }
+        }
+
+/*         &.x-icon-pinterest-square {
+          background: url('../images/pinterest-topbar-icon-brown.png') no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }  */
+      }
+    }
+    .x-hidden-desktop {
+      display: none !important;
+    }
+  }
+
+  .x-menu-item-search {
+    @media screen and (max-width: 978px) {
+      display: none;
+    }
+  }
+
+  .x-navbar {
+    .x-nav-wrap {
+      .x-nav {
+        .current-menu-item {
+          a {
+            box-shadow: none;
+          }
+        }
+
+        li {
+          a:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
